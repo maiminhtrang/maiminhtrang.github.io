@@ -1,0 +1,17 @@
+.my-list {
+    margin: 0 auto; /* Căn giữa trang */
+    padding: 8px 24px;
+    width: 500px;
+    font-size: 30px; /* Cỡ chữ to theo slide */
+    border: 1px solid #f7f381; /* Viền cùng màu nền */
+    background: #f7f381; /* Mã màu vàng nhạt trong đề */
+    box-shadow: 0 0 10px 2px #333333; /* Tạo bóng đổ đen mờ xung quanh */
+}
+
+.my-list ol {
+    margin: 12px;
+}
+
+.my-list p {
+    text-align: center; /* Căn giữa ngày tháng theo yêu cầu Hints */
+}

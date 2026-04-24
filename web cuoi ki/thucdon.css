@@ -1,0 +1,123 @@
+.menu-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(19, 26, 58, 0.7), rgba(19, 26, 58, 0.7)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 60px; 
+}
+
+.menu-hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.menu-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.menu-hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Phần Danh sách Thực đơn */
+.menu-detail-section {
+    padding: 80px 0;
+    background-color: var(--bg-white);
+}
+
+.menu-intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+
+.menu-row {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.menu-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.menu-image-collage {
+    flex: 1.2;
+    display: flex;
+    gap: 15px;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Ảnh lớn bên trái */
+.img-main {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.img-sub-group {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img-sub {
+    width: 100%;
+    height: calc(50% - 7.5px);
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.menu-content {
+    flex: 1;
+    text-align: center; 
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.menu-course {
+    margin-bottom: 20px;
+}
+
+.menu-course h4 {
+    color: var(--gold);
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-course p {
+    margin: 4px 0;
+    color: #444;
+    font-size: 14px;
+}

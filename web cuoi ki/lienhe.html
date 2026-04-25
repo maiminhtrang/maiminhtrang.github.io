@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ & Báo Giá - ROMEO CENTER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="lienhe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header" id="header">
+        <div class="logo">
+            <h2><span class="gold-text">R</span> ROMEO CENTER</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="web.html">TRANG CHỦ</a></li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">SẢNH TIỆC <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">DỊCH VỤ <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="thucdon.html">THỰC ĐƠN</a></li>
+                <li><a href="#">TIN TỨC <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">TUYỂN DỤNG</a></li>
+                <li><a href="lienhe.html" class="active">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-hero">
+        <div class="booking-hero-content">
+            <h1>Liên Hệ & Nhận Báo Giá</h1>
+            <p>Tự tay lựa chọn sảnh tiệc, thực đơn và các dịch vụ đi kèm để nhận báo giá dự toán ngay lập tức.</p>
+        </div>
+    </section>
+
+    <div class="container booking-main-layout">
+        
+        <div class="booking-selection-area">
+            
+            <div class="booking-group">
+                <h2 class="group-title">1. Lựa Chọn Sảnh Tiệc</h2>
+                <div class="selection-grid">
+                    <div class="selection-card">
+                        <img src="sanhdiamond.png" alt="Sảnh Diamond">
+                        <div class="selection-info">
+                            <h3>Sảnh Diamond (800 Khách)</h3>
+                            <p class="desc">Không gian sang trọng, đẳng cấp</p>
+                            <p class="card-price">5.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Sảnh Diamond" data-price="5000000">CHỌN SẢNH</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="sanhruby.png" alt="Sảnh Ruby">
+                        <div class="selection-info">
+                            <h3>Sảnh Ruby (400 Khách)</h3>
+                            <p class="desc">Ấm cúng và tinh tế</p>
+                            <p class="card-price">3.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Sảnh Ruby" data-price="3000000">CHỌN SẢNH</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="sanhngoaitroi.png" alt="Sảnh Ngoài Trời">
+                        <div class="selection-info">
+                            <h3>Sảnh Ngoài Trời (600 Khách)</h3>
+                            <p class="desc">Thoáng đãng, gần gũi thiên nhiên</p>
+                            <p class="card-price">4.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Sảnh Ngoài Trời" data-price="4000000">CHỌN SẢNH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-group">
+                <h2 class="group-title">2. Lựa Chọn Thực Đơn</h2>
+                <div class="guest-counter">
+                    <span>Số lượng mâm cỗ dự kiến:</span>
+                    <input type="number" id="table-count" value="30" min="1">
+                    <small>(1 bàn / 10 khách)</small>
+                </div>
+                <div class="selection-grid">
+                    <div class="selection-card">
+                        <img src="1menu1.png" alt="Menu 1">
+                        <div class="selection-info">
+                            <h3>Thực Đơn 01</h3>
+                            <p class="desc">Điểm nhấn: Gà Đông Tảo hấp xì dầu & Cá quả nướng</p>
+                            <p class="card-price">2.500.000 đ / mâm</p>
+                            <button class="btn-select" data-type="per-table" data-name="Thực đơn 01" data-price="2500000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="2menu2.png" alt="Menu 2">
+                        <div class="selection-info">
+                            <h3>Thực Đơn 02</h3>
+                            <p class="desc">Điểm nhấn: Cá lăng chiên hành nhân & Bê sữa chao tỏi</p>
+                            <p class="card-price">3.200.000 đ / mâm</p>
+                            <button class="btn-select" data-type="per-table" data-name="Thực đơn 02" data-price="3200000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3" alt="Menu 3">
+                        <div class="selection-info">
+                            <h3>Thực Đơn 03</h3>
+                            <p class="desc">Điểm nhấn: Cá Song hấp nấm & Sườn bò Mỹ áp chảo</p>
+                            <p class="card-price">4.200.000 đ / mâm</p>
+                            <button class="btn-select" data-type="per-table" data-name="Thực đơn 03" data-price="4200000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-group">
+                <h2 class="group-title">3. Gói Trang Trí Sảnh & Bàn Tiệc</h2>
+                <div class="selection-grid">
+                    <div class="selection-card">
+                        <img src="hoalua.png" alt="Decor Lụa">
+                        <div class="selection-info">
+                            <h3>Decor Tiêu Chuẩn (Hoa Lụa)</h3>
+                            <p class="desc">Sang trọng, tiết kiệm chi phí</p>
+                            <p class="card-price">5.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Decor Hoa Lụa Tiêu Chuẩn" data-price="5000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3" alt="Decor Bán Tươi">
+                        <div class="selection-info">
+                            <h3>Decor Bán Tươi (Lụa + Tươi)</h3>
+                            <p class="desc">Điểm nhấn hoa tươi tại khu vực chính</p>
+                            <p class="card-price">12.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Decor Bán Tươi" data-price="12000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="hoatuoi100.png" alt="Decor Hoa Tươi">
+                        <div class="selection-info">
+                            <h3>Decor 100% Hoa Tươi VIP</h3>
+                            <p class="desc">Tràn ngập hương thơm hoa tươi nhập khẩu</p>
+                            <p class="card-price">30.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Decor 100% Hoa Tươi VIP" data-price="30000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-group">
+                <h2 class="group-title">4. Âm Thanh, Ánh Sáng & Nhân Sự</h2>
+                <div class="selection-grid">
+                    <div class="selection-card">
+                        <img src="mc.png" alt="MC">
+                        <div class="selection-info">
+                            <h3>MC Chuyên Nghiệp</h3>
+                            <p class="desc">Dẫn dắt cảm xúc, kịch bản ấn tượng</p>
+                            <p class="card-price">2.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="MC Chuyên Nghiệp" data-price="2000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="casi.png" alt="Ca sĩ">
+                        <div class="selection-info">
+                            <h3>Ca Sĩ Hát Tiệc</h3>
+                            <p class="desc">2 Ca sĩ hát mở màn & đón khách</p>
+                            <p class="card-price">4.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Ca sĩ hát tiệc" data-price="4000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="dj.png" alt="DJ">
+                        <div class="selection-info">
+                            <h3>DJ Chơi Nhạc Sôi Động</h3>
+                            <p class="desc">Set nhạc After-party 120 phút</p>
+                            <p class="card-price">5.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="DJ After-party" data-price="5000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                    <div class="selection-card">
+                        <img src="vudoan.png" alt="Vũ đoàn">
+                        <div class="selection-info">
+                            <h3>Vũ Đoàn Mở Màn</h3>
+                            <p class="desc">Tiết mục múa dẫn dâu rể hoàng tráng</p>
+                            <p class="card-price">6.000.000 đ</p>
+                            <button class="btn-select" data-type="fixed" data-name="Vũ đoàn mở màn" data-price="6000000">THÊM VÀO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <aside class="booking-bill-sidebar">
+            <div class="bill-box">
+                <h2 class="bill-title">CHI PHÍ DỰ TOÁN</h2>
+                <div class="bill-items" id="bill-items">
+                    <p class="bill-empty">Chưa có dịch vụ nào được chọn</p>
+                </div>
+                <div class="bill-divider"></div>
+                <div class="bill-total-row">
+                    <span>Tổng cộng tạm tính:</span>
+                    <span id="total-price-display">0 đ</span>
+                </div>
+                <p class="bill-note">* Chi phí thực tế sẽ thấp hơn sau khi áp dụng các chương trình ưu đãi độc quyền tại Romeo Center.</p>
+                <button class="btn-send-estimate" onclick="window.location.href='#promo-form-section'">NHẬN BÁO GIÁ CHIẾT KHẤU</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <section class="promotion-section" id="promo-form-section">
+        <div class="container promotion-container">
+            <div class="promo-text">
+                <div class="section-subtitle-promo">ROMEO CENTER</div>
+                <h2>Gửi dự toán để nhận<br><span class="highlight">ƯU ĐÃI ĐẶC BIỆT</span></h2>
+                <p>Chúng tôi sẽ dựa trên các hạng mục bạn đã chọn để cân đối mức chiết khấu tốt nhất. Chuyên viên sẽ liên hệ lại với bạn ngay sau khi nhận được yêu cầu.</p>
+            </div>
+            
+            <div class="promo-form-container">
+                <h3>Thông tin tư vấn</h3>
+                <form class="promo-form">
+                    <input type="text" placeholder="HỌ VÀ TÊN *" required>
+                    <input type="text" placeholder="SỐ ĐIỆN THOẠI *" required>
+                    <input type="text" placeholder="NGÀY TỔ CHỨC">
+                    <textarea placeholder="Ghi chú thêm (Số lượng khách, yêu cầu đặc biệt...)" rows="3"></textarea>
+                    <button type="submit">GỬI YÊU CẦU NGAY <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-contact-bar">
+                <div class="footer-logo">
+                    <h2><span class="gold-text">R</span> ROMEO CENTER</h2>
+                </div>
+                <div class="contact-info-group">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <span>093513398</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <span>tochucsukienvatieccuoi@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p style="text-align: center; font-size: 13px; color: #aaa;">© 2026 ROMEO CENTER. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="web.js"></script>
+    <script src="lienhe.js"></script>
+</body>
+</html>

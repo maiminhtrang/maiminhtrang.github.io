@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="web.css">       <link rel="stylesheet" href="thucdon.css">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="web.css">       
+    <link rel="stylesheet" href="thucdon.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -30,9 +31,25 @@
         </nav>
     </header>
 
-    <div class="menu-row">
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>Menu</h1>
+            <p>Tự hào sở hữu đội ngũ đầu bếp tài năng, giàu kinh nghiệm, Romeo Center mang đến cho quý khách hàng thực đơn đa dạng, trải nghiệm ẩm thực độc đáo phù hợp với mọi khẩu vị.</p>
+        </div>
+    </section>
+
+    <section class="menu-detail-section">
+        <div class="container">
+            
+            <div class="section-header-center">
+                <div class="section-subtitle"><i class="fas fa-seedling"></i> MENU <i class="fas fa-seedling"></i></div>
+                <h2 class="section-title">Menu tiệc tham khảo</h2>
+                <p class="menu-intro-text">Tại Romeo Center, thực đơn tiệc vô cùng đa dạng, là sự kết hợp hoàn hảo giữa món Á và món Âu. Mỗi món ăn được chế biến tỉ mỉ, từ nguyên liệu tươi ngon nhất, nhằm mang đến những trải nghiệm ẩm thực độc đáo cho thực khách.</p>
+            </div>
+
+            <div class="menu-row">
                 <div class="menu-image-collage">
-                    <img src="https://images.unsplash.com/photo-1555244162-803834f87a4d?ixlib=rb-4.0.3" class="img-main" alt="Món chính">
+                    <img src="1menu1.png" class="img-main" alt="Món chính">
                     <div class="img-sub-group">
                         <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3" class="img-sub" alt="Món phụ 1">
                         <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3" class="img-sub" alt="Món phụ 2">
@@ -69,7 +86,7 @@
 
             <div class="menu-row reverse">
                 <div class="menu-image-collage">
-                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3" class="img-main" alt="Món chính">
+                    <img src="2menu2.png" class="img-main" alt="Món chính">
                     <div class="img-sub-group">
                         <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3" class="img-sub" alt="Món phụ 1">
                         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3" class="img-sub" alt="Món phụ 2">
@@ -140,10 +157,103 @@
                     </div>
                 </div>
             </div>
+        </div> 
     </section>
+   <section class="promotion-section">
+    <div class="container promotion-container">
+        <div class="promo-text">
+            <div class="section-subtitle-promo">ROMEO CENTER</div>
+            <h2>Ưu đãi trọn gói lên đến<br><span class="highlight">50.000.000 VNĐ</span></h2>
+            <h3>Đăng ký để nhận thông tin ngay</h3>
+            <p>Điền thông tin để nhận ngay ưu đãi và cùng hấp dẫn khi đặt tiệc tại Romeo Center lên tới 50.000.000 VNĐ, nhận tư vấn miễn phí về sảnh tiệc phù hợp, kế hoạch tổ chức đám cưới - hội nghị.</p>
+        </div>
+        
+        <div class="promo-form-container">
+            <h3>Liên hệ ngay để nhận ưu đãi</h3>
+            <form class="promo-form">
+                <input type="text" placeholder="HỌ VÀ TÊN *" required>
+                <input type="text" placeholder="NGÀY TỔ CHỨC">
+                <input type="text" placeholder="SỐ ĐIỆN THOẠI *" required>
+                <input type="text" placeholder="SỐ LƯỢNG KHÁCH">
+                <select>
+                    <option value="">DỊCH VỤ</option>
+                    <option value="cuoi">Tổ chức tiệc cưới</option>
+                    <option value="hoinghi">Tổ chức hội nghị</option>
+                    <option value="hoithao">Tổ chức hội thảo</option>
+                </select>
+                <button type="submit">LIÊN HỆ <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
 
     <footer class="main-footer">
-        </footer>
+        <div class="container">
+            <div class="footer-contact-bar">
+                <div class="footer-logo">
+                    <h2><span class="gold-text">R</span> ROMEO CENTER</h2>
+                </div>
+                <div class="contact-info-group">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <span>093513398</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <span>tochucsukienvatieccuoi@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <span>Số 356 Xuân Thủy, Cầu Giấy, Hà Nội</span>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="footer-divider">
+    
+            <div class="footer-columns">
+                <div class="footer-col about-col">
+                    <h3>Về chúng tôi</h3>
+                    <p>Romeo Center - Trung tâm tổ chức tiệc cưới & Sự kiện tại Hà Nội, mang tới không gian tổ chức sự kiện đẳng cấp, sang trọng hàng đầu cùng dịch vụ chuyên nghiệp, hoàn hảo.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col links-col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sảnh tiệc</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Thực đơn</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col policy-col">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col subscribe-col">
+                    <h3>Đăng ký</h3>
+                    <form class="subscribe-form">
+                        <input type="text" placeholder="Phone">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="web.js"></script>
 </body>

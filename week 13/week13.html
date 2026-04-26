@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+        .form-container {
+            width: 600px;
+            margin: 20px auto;
+        }
+        h3.form-title {
+            color: #8A0000;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #B0B0B0;
+            margin: 15px 0;
+        }
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .main-table td {
+            padding: 6px 0;
+            vertical-align: top;
+        }
+        .label-col {
+            width: 140px;
+            color: #336699;
+        }
+        .blue-text {
+            color: #336699;
+        }
+        input[type="text"], input[type="password"] {
+            border: 1px solid #A9A9A9;
+            padding: 3px;
+            width: 180px;
+        }
+        select {
+            padding: 2px;
+        }
+        .btn-register {
+            background: linear-gradient(to bottom, #d02020 0%, #8a0000 100%);
+            border: 2px solid #fff;
+            outline: 1px solid #8a0000;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 6px 25px;
+            cursor: pointer;
+            box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+        }
+        .checkbox-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .checkbox-table td {
+            padding: 4px 0;
+            color: #336699;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="form-title">Registration</h3>
+        <hr>
+        
+        <form>
+            <table class="main-table">
+                <tr>
+                    <td class="label-col">Username:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Re-type<br>Password:</td>
+                    <td><input type="password" name="repassword"></td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <table class="main-table">
+                <tr>
+                    <td class="label-col">Birthday:</td>
+                    <td class="blue-text">
+                        <select name="month">
+                            <option>[select one]</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select> , 
+                        <input type="text" name="day" style="width: 40px;"> , 
+                        <input type="text" name="year" style="width: 60px;"> (Month Day, Year)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col">Images:</td>
+                    <td><input type="file" name="image"></td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <table class="main-table">
+                <tr>
+                    <td class="label-col">First Name:</td>
+                    <td>
+                        <input type="text" name="firstname" style="width: 110px;">
+                        <span class="blue-text" style="margin-left: 15px; margin-right: 5px;">Last Name:</span>
+                        <input type="text" name="lastname" style="width: 120px;">
+                    </td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <table class="main-table">
+                <tr>
+                    <td class="label-col">Interests (optional):</td>
+                    <td>
+                        <table class="checkbox-table">
+                            <tr>
+                                <td><input type="checkbox" name="interest" value="Entertainment"> Entertainment</td>
+                                <td><input type="checkbox" name="interest" value="Business"> Business</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="interest" value="HomeFamily"> Home & Family</td>
+                                <td><input type="checkbox" name="interest" value="Computers"> Computers & Technology</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="interest" value="Health"> Health</td>
+                                <td><input type="checkbox" name="interest" value="Finance"> Personal Finance</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="interest" value="Music"> Music</td>
+                                <td><input type="checkbox" name="interest" value="SmallBusiness"> Small Business</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <div style="text-align: center; margin-top: 15px;">
+                <button type="button" class="btn-register">REGISTER</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
